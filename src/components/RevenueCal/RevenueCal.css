@@ -1,0 +1,149 @@
+.revenue-calculator {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+input[type="number"]{
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="range"] {
+  width: 100%; /* Takes full available width */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* .revenue > input {
+  margin-top: 5px;
+} */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+  
+.revenue{
+  display: flex;
+  gap: 10px;
+}
+
+.growth-rate {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  gap: 10px;
+}
+
+.growth-rate input[type="range"] {
+  flex-grow: 1;  /* Make the slider take available space */
+  margin-right: 10px; 
+  display: flex;
+  align-items: center ;
+  justify-content: center; /* Add space between the slider and number input */
+}
+
+.growth-rate input[type="number"] {
+  width: 80px; /* Size the number input */
+}
+
+.slider-value {
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px; /* Space between the buttons */
+  justify-content: flex-start; /* Align buttons to the left */
+}
+
+.button-container >button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.reset-button {
+  background-color: #dc3545;
+}
+
+.reset-button:hover {
+  background-color: #c82333;
+}
+
+
+.output-section {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.export-section {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+.export-button {
+  display: flex;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+  gap: 8px;
+  background-color: #28a745;
+}
+
+.export-button:hover {
+  background-color: #218838;
+}
+
+.summary-section {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
