@@ -1,5 +1,7 @@
 .revenue-calculator {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;

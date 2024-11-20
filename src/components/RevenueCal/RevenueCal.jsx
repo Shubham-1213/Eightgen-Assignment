@@ -35,10 +35,14 @@ const RevenueCal = () => {
     // Validation for negative inputs
     if (parseFloat(currentRevenue) < 0) {
       setError("Revenue cannot be negative.");
+      setCurrentRevenue(""); // Clear input field
+      setGrowthRate(10.0); // Reset growth rate to default
       return;
     }
     if (parseFloat(growthRate) < 0) {
       setError("Growth rate cannot be negative.");
+      setCurrentRevenue(""); // Clear input field
+      setGrowthRate(10.0);
       return;
     }
 
